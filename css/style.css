@@ -756,6 +756,9 @@ body {
 /* END:made */
 
 /* FOOTER */
+.footer {
+    position: relative;
+}
 .footer__bottom {
     padding: 30px 0;
 }
@@ -785,6 +788,13 @@ body {
     left: 0;
     transform: translate(-15%, -15%);
     z-index: -1;
+}
+.footer__img-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70%;
+    width: auto;
 }
 /* END:FOOTER */
 
