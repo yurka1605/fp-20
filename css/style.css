@@ -202,6 +202,25 @@ body {
     font-size: 18px;
     padding-bottom: 15px;
 }
+.old-price, 
+.old-valutes {
+    position: relative;
+}
+.old-price::before, 
+.old-valutes::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 5px);
+    height: 1px;
+    background-color: #e3420d;
+}
+.old-valutes::before {
+    background-color: #000000;
+}
 .price__new {
     font-size: 26px;
 }
@@ -230,7 +249,7 @@ body {
     padding: 15px 0;
     border-radius: 8px;
     align-items: center;
-    box-shadow: 1px 0px 8px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 5px -1px rgba(0,0,0,0.75);
 }
 .header__bottom div {
     text-align: right;
@@ -243,7 +262,7 @@ body {
     outline: none;
     border: 1px solid #bcbcbc;
     line-height: 1;
-    box-shadow: 1px 0px 18px -1px #bcbcbc;
+    box-shadow: 1px 0px 2px -1px #bcbcbc;
 }
 .header__bottom button {
     width: 250px;
@@ -286,6 +305,7 @@ body {
     display: flex;
     max-height: 400px;
 }
+.footer .slider-shadow,
 .ok .slider-shadow {
     position: relative;
     display: flex;
@@ -293,7 +313,7 @@ body {
     height: 20px;
     width: 100%;
 }
-.ok .shadow-left {
+.shadow-left {
     display: block;
     position: relative;
     bottom: 0;
@@ -305,7 +325,7 @@ body {
     background-position: top left;
     z-index: 1;
 }
-.ok .shadow-right {
+.shadow-right {
     display: block;
     position: relative;
     bottom: 0;
@@ -371,13 +391,35 @@ body {
 /* END:OK */
 
 /* FOOTER */
-.footer {
+.footer__bottom {
     padding: 30px 0;
 }
 .footer__text {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.footer .header__middle {
+    padding-top: 0;
+}
+.footer .header__middle_images {
+    padding-top: 50px;
+}
+.footer .section-title {
+    text-align: right;
+}
+.footer .header__price {
+    position: relative;
+}
+.footer .header__bottom {
+    background-color: #fff;
+}
+.footer__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-15%, -15%);
+    z-index: -1;
 }
 /* END:FOOTER */
 
