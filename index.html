@@ -12,7 +12,7 @@
     <header class="header">
         <div class="container">
             <div class="row header__top">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12">
                     <div class="logo">
                         <img src="./assets/logo.png" alt="logo">
                         <div class="logo-text">
@@ -21,10 +21,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 header__text">Комплексная защита организма от любых вирусов</div>
+                <div class="col-lg-6 col-12 header__text">Комплексная защита организма от любых вирусов</div>
             </div>
             <div class="row header__middle">
-                <div class="col-lg-6 header__middle_images">
+                <ul class="col-12 header__list">
+                    <li>
+                        <b>СПОСОБСТВУЕТ</b> уменьшению
+                        симптомов интоксикации и
+                        воспаления
+                    </li>
+                    <li>
+                        <b>ПОМОГАЕТ</b> организму
+                        бороться с вирусом
+                    </li>
+                    <li>
+                        <b>СПОСОБСТВУЕТ</b>
+                        укреплению иммунитета
+                    </li>
+                </ul>
+                <div class="col-lg-6 col-12 header__middle_images">
                     <div class="header__maz">
                         <img src="./assets/maz.png" alt="maz">
                         <div>СПОСОБСТВУЕТ уменьшению
@@ -68,13 +83,19 @@
                 </div>
             </div>
             <div class="row header__bottom">
-                <div class="col-lg-4">
+                <div class="header__price_time col-12">
+                    <span class="time__title">до конца акции осталось:</span>
+                    <time class="time">
+                        <span class="hours">00</span>:<span class="min">13</span>:<span class="sec">56</span>
+                    </time>
+                </div>
+                <div class="col-lg-4 col-12">
                     <input name="name" type="text" placeholder="Имя">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12">
                     <input id="topPhone" type="text" name="phone" placeholder="Телефон">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12">
                     <button>Оформить заказ</button>
                 </div>
             </div>
@@ -198,10 +219,11 @@
         <section class="products">
             <div class="container products__items">
                 <div class="row products__item">
-                    <div class="products__img col-lg-3">
+                    <div class="products__img col-lg-3 col-12">
+                        <h2 class="section-title">Иммуномодулятор</h2>
                         <img src="./assets/imun.png" alt="sprey">
                     </div>
-                    <div class="col-lg-9 products__text">
+                    <div class="col-lg-9 col-12 products__text">
                         <h2 class="section-title">Иммуномодулятор</h2>
                         <div class="products__text_desc">
                             <p>Шипучие таблетки 20 шт</p>
@@ -228,7 +250,7 @@
                     </div>
                 </div>
                 <div class="row products__item">
-                    <div class="col-lg-9 products__text">
+                    <div class="col-lg-9 col-12 products__text">
                         <h2 class="section-title">Спрей антисептический 100 мл</h2>
                         <div class="products__text_desc">
                             <p>
@@ -244,15 +266,17 @@
                             </p>
                         </div>
                     </div>
-                    <div class="products__img col-lg-3">
+                    <div class="products__img col-lg-3 col-12">
+                        <h2 class="section-title">Спрей антисептический 100 мл</h2>
                         <img src="./assets/sprey.png" alt="sprey">
                     </div>
                 </div>
                 <div class="row products__item">
-                    <div class="products__img col-lg-3">
+                    <div class="products__img col-lg-3 col-12">
+                        <h2 class="section-title">Мазь назальная</h2>
                         <img src="./assets/maz.png" alt="maz">
                     </div>
-                    <div class="col-lg-9 products__text">
+                    <div class="col-lg-9 col-12 products__text">
                         <h2 class="section-title">Мазь назальная</h2>
                         <div class="products__text_desc">
                             <p>
@@ -283,7 +307,7 @@
                     </div>
                 </div>
                 <div class="row products__item">
-                    <div class="col-lg-9 products__text">
+                    <div class="col-lg-9 col-12 products__text">
                         <h2 class="section-title">Помада антивирусная</h2>
                         <div class="products__text_desc">
                             <p>
@@ -306,7 +330,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="products__img col-lg-3">
+                    <div class="products__img col-lg-3 col-12">
+                        <h2 class="section-title">Помада антивирусная</h2>
                         <img src="./assets/pomada.png" alt="pomada">
                     </div>
                 </div>
@@ -426,8 +451,8 @@
         <section class="important">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 important__empty"></div>
+                    <div class="col-lg-3 col-12">
                         <h2 class="section-title">ВАЖНО!</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur
@@ -440,10 +465,24 @@
                             voluptate velit esse cillum olore eu
                             fugiat nulla pariatur. Excepteur sint
                         </p>
+                        <div class="header__middle_images mobile">
+                            <div class="header__maz">
+                                <img src="./assets/maz.png" alt="maz">
+                            </div>
+                            <div class="header__pomada">
+                                <img src="./assets/pomada.png" alt="pomada">
+                            </div>
+                            <div class="header__sprey">
+                                <img src="./assets/sprey.png" alt="sprey">
+                            </div>
+                            <div class="header__imun">
+                                <img src="./assets/imun.png" alt="imun">
+                            </div>
+                        </div>
                         <p class="important__price">Заказать за <b>2 499</b> руб.<b>!</b></p>
                         <button class="important__btn">заказать</button>
                     </div>
-                    <div class="col-lg-6 header__middle_images">
+                    <div class="col-lg-6 col-12 header__middle_images desctop">
                         <div class="header__maz">
                             <img src="./assets/maz.png" alt="maz">
                         </div>
@@ -466,13 +505,15 @@
                     <h2 class="col-12 section-title">Экспертное мнение</h2>
                 </div>
                 <div class="row expert__item">
-                    <div class="col-lg-3 expert__img">
+                    <div class="col-lg-3 col-6 expert__img">
                         <img src="./assets/expert-1.png" alt="expert-1">
                     </div>
                     <div class="col-lg-9 expert__info">
-                        <h3 class="expert__title">Иван Капустин</h3>
-                        <span class="expert__subtitle">Независимый эксперт, Владелец клиники</span>
-                        <span class="expert__stag">Стаж практики 19 лет</span>
+                        <div class="expert__info-main">
+                            <h3 class="expert__title">Иван Капустин</h3>
+                            <span class="expert__subtitle">Независимый эксперт, Владелец клиники</span>
+                            <span class="expert__stag">Стаж практики 19 лет</span>
+                        </div>
                         <div class="products__text_desc">
                             <p>
                                 Натуральная изотоническая помада на основе растительной формулы биогенных концентратов растений, сока и экстраординарного масла корня копеечника забытого, оказывающих комплексное противовирусное, регенерирующее, противовоспалительное, увлажняющее действие на нежную кожу губ.
@@ -486,9 +527,11 @@
                 </div>
                 <div class="row expert__item">
                     <div class="col-lg-9 expert__info">
-                        <h3 class="expert__title">Иван Капустин</h3>
-                        <span class="expert__subtitle">Независимый эксперт, Владелец клиники</span>
-                        <span class="expert__stag">Стаж практики 19 лет</span>
+                        <div class="expert__info-main">
+                            <h3 class="expert__title">Иван Капустин</h3>
+                            <span class="expert__subtitle">Независимый эксперт, Владелец клиники</span>
+                            <span class="expert__stag">Стаж практики 19 лет</span>
+                        </div>
                         <div class="products__text_desc">
                             <p>
                                 Натуральная изотоническая помада на основе растительной формулы биогенных концентратов растений, сока и экстраординарного масла корня копеечника забытого, оказывающих комплексное противовирусное, регенерирующее, противовоспалительное, увлажняющее действие на нежную кожу губ.
@@ -499,7 +542,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 expert__img">
+                    <div class="col-lg-3 col-6 expert__img">
                         <img src="./assets/expert-2.png" alt="expert-2">
                     </div>
                 </div>
@@ -512,7 +555,7 @@
                 </div>
                 <div class="feedback__slider">
                     <div data-num="1" class="feedback__slider_item slide active row">
-                        <div class="col-lg-6">
+                        <div class="col-6">
                             <div class="feedback__item">
                                 <img src="./assets/client-1.png" alt="client-1">
                                 <div class="products__text_desc">
@@ -532,7 +575,7 @@
                                 <div class="shadow-right"></div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-6">
                             <div class="feedback__item">
                                 <img src="./assets/client-1.png" alt="client-1">
                                 <div class="products__text_desc">
@@ -554,7 +597,7 @@
                         </div>
                     </div>
                     <div data-num="2" class="feedback__slider_item slide row">
-                        <div class="col-lg-6">
+                        <div class="col-6">
                             <div class="feedback__item">
                                 <img src="./assets/client-1.png" alt="client-1">
                                 <div class="products__text_desc">
@@ -574,7 +617,7 @@
                                 <div class="shadow-right"></div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-6">
                             <div class="feedback__item">
                                 <img src="./assets/client-1.png" alt="client-1">
                                 <div class="products__text_desc">
@@ -596,7 +639,7 @@
                         </div>
                     </div>
                     <div data-num="3" class="feedback__slider_item slide row">
-                        <div class="col-lg-6">
+                        <div class="col-6">
                             <div class="feedback__item">
                                 <img src="./assets/client-1.png" alt="client-1">
                                 <div class="products__text_desc">
@@ -616,7 +659,7 @@
                                 <div class="shadow-right"></div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-6">
                             <div class="feedback__item">
                                 <img src="./assets/client-1.png" alt="client-1">
                                 <div class="products__text_desc">
@@ -655,28 +698,32 @@
         <section class="made">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 sert">
+                    <div class="col-lg-4 sert col-12">
+                        <h2 class="section-title mobile">
+                            Производитель,<br>
+                            которому можно доверять!
+                        </h2>
                         <img src="./assets/sertificate.png" alt="sert">
                         <div class="sert-shadow">
                             <div class="shadow-left"></div>
                             <div class="shadow-right"></div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
-                        <h2 class="section-title">
+                    <div class="col-lg-8 col-12">
+                        <h2 class="section-title desctop">
                             Производитель,<br>
                             которому можно доверять!
                         </h2>
-                        <img src="./assets/made.png" alt="made" class="made__img">
-                        <div class="made-shadow">
+                        <img src="./assets/made.png" alt="made" class="made__img desctop">
+                        <div class="made-shadow desctop">
                             <div class="shadow-left"></div>
                             <div class="shadow-right"></div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-4 made__clean">
+                        <div class="row icons">
+                            <div class="col-lg-4 col-6 made__clean">
                                 <img src="./assets/clean-nature.png" alt="made">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-12">
                                 <div class="row made__items">
                                     <div class="made__item">
                                         <img src="./assets/icon-1.png" alt="1">
@@ -703,6 +750,12 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <img src="./assets/made-mobile-1.png" alt="mad-1" class="mobile">
+                        <img src="./assets/made-mobile-2.png" alt="mad-2" class="mobile">
+                        <div class="made-shadow mobile">
+                            <div class="shadow-left"></div>
+                            <div class="shadow-right"></div>
                         </div>
                     </div>
                 </div>

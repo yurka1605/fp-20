@@ -71,7 +71,11 @@ function changeSlide(slider, arrow) {
         num = num === lastNum ? 1 : num + 1;
     }
     
-    var left = $(firtsSlide).width() * (num - 1) + 30 * (num - 1);
+    var left = $(firtsSlide).width() * (num - 1) + ($(window).width() > 992 ? 30 * (num - 1) : 0);
+
+    if ($(window).width() < 992 && $(slider).hasClass('feedback__slider')) {
+        left = left / 2;
+    }
     $( firtsSlide ).animate({ marginLeft: `${ - left }px`}, 200);
     $(current).removeClass('active');
     $(slides[num - 1]).addClass('active');
