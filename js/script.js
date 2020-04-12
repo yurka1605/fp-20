@@ -73,7 +73,7 @@ function changeSlide(slider, arrow) {
     
     var left = $(firtsSlide).width() * (num - 1) + ($(window).width() > 992 ? 30 * (num - 1) : 0);
 
-    if ($(window).width() < 992 && $(slider).hasClass('feedback__slider')) {
+    if ($(slider).hasClass('feedback__slider')) {
         left = left / 2;
     }
     $( firtsSlide ).animate({ marginLeft: `${ - left }px`}, 200);
