@@ -627,7 +627,7 @@ body {
     margin-top: 0;
 }
 .feedback__item img {
-    height: 233px;
+    height: 174px;
     width: 174px;
     border-radius: 4px;
     position: absolute;
@@ -639,11 +639,12 @@ body {
     margin-top: 28px;
     padding-top: 24px;
     border-top: 1px solid #e3420d;
-    font-size: 20px;
+    font-size: 18px;
+    white-space: nowrap;
 }
 .feedback__author span {
     color: #e3420d;
-    font-size: 26px;
+    font-size: 24px;
 }
 .feedback .slider-shadow {
     position: relative;
@@ -858,6 +859,11 @@ body {
 }
 
 @media (max-width: 992px) {
+    .ok .slide__img img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
     .products__img img {
         transform: translateX(25%);
     }
@@ -1064,6 +1070,7 @@ body {
     }
     .feedback__item img {
         height: 193px;
+        width: 193px;
         top: 0;
         right: 50%;
         transform: translate(50%, -50%);
@@ -1240,5 +1247,8 @@ body {
 @media (max-width: 375px) {
     .header__pomada, .header__maz, .header__sprey, .header__imun {
         height: 350px;
+    }
+    .feedback__author {
+        white-space: normal;
     }
 }
