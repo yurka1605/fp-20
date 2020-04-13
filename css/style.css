@@ -845,20 +845,66 @@ body {
     height: 304px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
+    .header__middle {
+        padding: 100px 0 0 0;
+    }
     .header__top {
         justify-content: space-between;
         padding-bottom: 0px;
     }
     .header__price_price {
-        padding-left: 50px;
+        padding-left: 10px;
     }
     .important__empty {
         display: none;
     }
+    .important .header__middle_images.desctop {
+        display: none;
+    }
+    .important .header__middle_images.mobile {
+        display: flex;
+    }
+    .important {
+        padding-bottom: 75%;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .important__price {
+        text-align: center;
+    }
+    .important .section-title {
+        text-align: center;
+    }
+    .important .col-lg-4 {
+        max-width: 100%;
+        height: 100%;
+        flex: 0 0 100%;
+    }
+    .important .all__images {
+        top: -20%;
+        transform: scale(0.6);
+    }
+    .price__new {
+        font-size: 22px;
+    }
+    .price__old {
+        font-size: 16px;
+    }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+    .important .all__images {
+        transform: scale(1);
+        top: 0;
+    }
+    .header__middle_images.desctop {
+        display: none;
+    }
+    .header__middle_images.mobile {
+        display: flex;
+    }
     .ok .slide__img img {
         width: 100%;
         height: auto;
@@ -1015,24 +1061,6 @@ body {
     .mobile {
         display: block;
     }
-    .header__middle_images.desctop {
-        display: none;
-    }
-    .header__middle_images.mobile {
-        display: flex;
-    }
-    .important {
-        padding-bottom: 75%;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: bottom;
-    }
-    .important__price {
-        text-align: center;
-    }
-    .important .section-title {
-        text-align: center;
-    }
     .expert__item {
         position: relative;
     }
@@ -1138,16 +1166,13 @@ body {
     .footer .shadow-right {
         right: -15px;
     }
-    .important .all__images {
-        transform: scale(1);
-    }
     .header .all__images,
     .footer .all__images {
         transform: scale(1);
         top: -15%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
    .header__middle_images {
        transform: scale(0.6);
    }
